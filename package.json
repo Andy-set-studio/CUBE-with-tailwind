@@ -13,7 +13,7 @@
     }
   },
   "scripts": {
-    "process": "postcss src/css/global.css -o dist/css/global.css && cp src/index.html dist/index.html",
+    "process": "postcss src/css --dir dist/css && cp src/index.html dist/index.html",
     "start": "node css-props-generator.js && npm run process && concurrently 'npm-watch' 'npx serve dist'"
   },
   "repository": {

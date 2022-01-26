@@ -8,7 +8,11 @@ const config = require('./tailwind.config.js');
 const generateCSSProps = () => {
   let result = '';
 
-  const groups = [{key: 'colors', prefix: 'color'}];
+  const groups = [
+    {key: 'colors', prefix: 'color'},
+    {key: 'spacing', prefix: 'space'},
+    {key: 'fontSize', prefix: 'size'}
+  ];
 
   // Add a note that this is auto generated
   result += `
