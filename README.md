@@ -2,6 +2,8 @@
 
 ⚠️ **THIS IS VERY MUCH A PROTOTYPE AND LIKELY BROKEN** ⚠️
 
+👀 **DEMO: <https://cube-css-with-tailwind.netlify.app/>** 👀
+
 An example of how you can use [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) as the U (utilities) in
 [CUBE CSS](https://cube.fyi/). It also uses the following:
 
