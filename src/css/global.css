@@ -1,4 +1,7 @@
+@import 'custom-props.css';
 @import 'reset.css';
+
+/* Global styles */
 
 /* Tailwind utilities */
 @tailwind utilities;

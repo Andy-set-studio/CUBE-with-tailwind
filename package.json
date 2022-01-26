@@ -14,7 +14,7 @@
   },
   "scripts": {
     "process": "postcss src/css/global.css -o dist/css/global.css && cp src/index.html dist/index.html",
-    "start": "npm run process && concurrently 'npm-watch' 'npx serve dist'"
+    "start": "node css-props-generator.js && npm run process && concurrently 'npm-watch' 'npx serve dist'"
   },
   "repository": {
     "type": "git",

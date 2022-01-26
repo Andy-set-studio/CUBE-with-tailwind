@@ -10,13 +10,21 @@ module.exports = {
       '2xl': '1536px'
     },
     colors: {
-      black: '#000',
-      white: '#fff'
+      primary: '#ff5400',
+      secondary: '#1982c4',
+      light: '#f3f3f3',
+      dark: '#252525'
     },
     backgroundColor: ({theme}) => theme('colors'),
     textColor: ({theme}) => theme('colors'),
     spacing: {
-      test: 'clamp(10px, 50%, 30px)'
+      0: 'clamp(0.83rem, 0.90rem + -0.32vw, 0.67rem)',
+      base: 'clamp(1.00rem, 1.00rem + 0.00vw, 1.00rem)',
+      1: 'clamp(1.20rem, 1.08rem + 0.59vw, 1.50rem)',
+      2: 'clamp(1.44rem, 1.12rem + 1.58vw, 2.25rem)',
+      3: 'clamp(1.73rem, 1.09rem + 3.21vw, 3.38rem)',
+      4: 'clamp(2.07rem, 0.91rem + 5.83vw, 5.06rem)',
+      5: 'clamp(2.49rem, 0.50rem + 9.96vw, 7.59rem)'
     },
     flex: {
       1: '1 1 0%',
