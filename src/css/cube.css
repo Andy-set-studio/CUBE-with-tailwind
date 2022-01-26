@@ -1,5 +1,3 @@
-@tailwind components;
-
 /* Compositions */
 @import 'compositions/*';
 
@@ -8,3 +6,6 @@
 
 /* Utilities */
 @import 'utilities/*';
+
+/* Tailwind utilities */
+@tailwind utilities;
