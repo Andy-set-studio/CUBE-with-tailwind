@@ -43,11 +43,28 @@ h3 {
 a {
   color: currentcolor;
   text-decoration-color: var(--color-primary);
-  font-weight: 500;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+/* Prose */
+h2,
+h3 {
+  --flow-space: var(--space-size-3);
+}
+
+h2 + *,
+h3 + * {
+  --flow-space: var(--space-base);
+}
+
+/* So text scale renders nicely */
+div[class*='text-'] {
+  --flow-space: 1rem;
+  line-height: 1;
+  font-weight: 700;
 }
 
 /* Tailwind utilities */

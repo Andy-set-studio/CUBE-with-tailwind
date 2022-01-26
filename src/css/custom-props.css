@@ -3,7 +3,7 @@
 
 :root {
   --color-primary: #ff5400;
-  --color-secondary: #1982c4;
+  --color-secondary: #86c7f0;
   --color-light: #f3f3f3;
   --color-dark: #252525;
   --space-size-0: clamp(0.83rem, 0.9rem + -0.32vw, 0.67rem);

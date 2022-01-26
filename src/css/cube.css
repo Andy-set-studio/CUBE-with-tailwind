@@ -1,6 +1,10 @@
+@tailwind components;
+
 /* Compositions */
+@import 'compositions/*';
 
 /* Blocks */
+@import 'blocks/*';
 
 /* Utilities */
 @import 'utilities/*';
