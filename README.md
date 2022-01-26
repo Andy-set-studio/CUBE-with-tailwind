@@ -2,8 +2,7 @@
 
 ⚠️ **THIS IS VERY MUCH A PROTOTYPE AND LIKELY BROKEN** ⚠️
 
-An example of how you can use [Tailwind CSS]
-(https://github.com/tailwindlabs/tailwindcss) as the U (utilities) in
+An example of how you can use [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) as the U (utilities) in
 [CUBE CSS](https://cube.fyi/). It also uses the following:
 
 1. [Every Layout](https://every-layout.dev/) layouts as compositional layouts (the C in CUBE CSS)
