@@ -1,0 +1,37 @@
+{
+  "name": "cube-with-tailwind",
+  "version": "0.1.0",
+  "description": "An example of how you can use Tailwind CSS as the U (utilities) in CUBE CSS",
+  "main": "tailwind.config.js",
+  "watch": {
+    "process": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "html,css,js",
+      "runOnChangeOnly": false
+    }
+  },
+  "scripts": {
+    "process": "postcss src/css/global.css -o dist/css/global.css && cp src/index.html dist/index.html",
+    "start": "npm run process && concurrently 'npm-watch' 'npx serve dist'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hankchizljaw/CUBE-with-tailwind.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hankchizljaw/CUBE-with-tailwind/issues"
+  },
+  "homepage": "https://github.com/hankchizljaw/CUBE-with-tailwind#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "npm-watch": "^0.11.0",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.16"
+  }
+}
