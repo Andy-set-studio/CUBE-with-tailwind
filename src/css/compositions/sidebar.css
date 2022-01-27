@@ -35,18 +35,11 @@ EXCEPTIONS
   min-width: var(--sidebar-content-min-width, 50%);
 }
 
-A
-  flipped
-  version
-  where
-  the
-  sidebar
-  is
-  on
-  the
-  right
-  .sidebar[data-direction='rtl']
-  > :last-child {
+/* 
+A flipped version where the sidebar is on the right
+*/
+.sidebar[data-direction='rtl']
+> :last-child {
   flex-basis: var(--sidebar-target-width, 20rem);
   flex-grow: 1;
 }
