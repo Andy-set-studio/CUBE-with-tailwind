@@ -26,8 +26,9 @@ Can be any acceptable flexbox alignment value.
   flex-basis: calc((var(--switcher-target-container-width, 40rem) - 100%) * 999);
 }
 
-Max 2 items,
-so we target everything *after* those .switcher > :nth-last-child(n + 3),
+/* Max 2 items,
+so we target everything *after* those */
+.switcher > :nth-last-child(n + 3),
 .switcher > :nth-last-child(n + 3) ~ * {
   flex-basis: 100%;
 }
