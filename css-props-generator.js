@@ -1,6 +1,9 @@
 const fs = require('fs');
 const prettier = require('prettier');
-const config = require('./tailwind.config.js');
+const resolveConfig = require('tailwindcss/resolveConfig');
+const tailwindConfig = require('./tailwind.config.js');
+
+const config = resolveConfig(tailwindConfig);
 
 /*
   Converts the tailwind config elements into custom props.
