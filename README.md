@@ -4,6 +4,8 @@
 
 👀 **DEMO: <https://cube-css-with-tailwind.netlify.app/>** 👀
 
+📝 **MORE INFO [I wrote up about this whole thing here](https://piccalil.li/blog/i-used-tailwind-for-the-u-in-cube-css-and-i-liked-it/)**
+
 An example of how you can use [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) as the U (utilities) in
 [CUBE CSS](https://cube.fyi/). It also uses the following:
 
