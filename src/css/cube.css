@@ -1,11 +1,11 @@
 /* Compositions */
-@import 'compositions/*';
+@import-glob 'compositions/*';
 
 /* Blocks */
-@import 'blocks/*';
+@import-glob 'blocks/*';
 
 /* Utilities */
-@import 'utilities/*';
+@import-glob 'utilities/*';
 
 /* Tailwind utilities */
 @tailwind utilities;
