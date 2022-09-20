@@ -2,6 +2,8 @@ const fs = require('fs');
 const prettier = require('prettier');
 const config = require('./tailwind.config.js');
 
+let isObject = (obj) => obj instanceof Object && !(obj instanceof Array);
+
 /*
   Converts the tailwind config elements into custom props.
 */
@@ -31,8 +33,16 @@ const generateCSSProps = () => {
       return;
     }
 
-    Object.keys(group).forEach(key => {
-      result += `--${prefix}-${key}: ${group[key]};`;
+    Object.keys(group).forEach((key) => {
+      if (isObject(group[key])) {
+        Object.keys(group[key]).forEach((innerKey) => {
+          result += `--${prefix}-${key}${
+            innerKey == 'DEFAULT' ? '' : '-' + innerKey
+          }: ${group[key][innerKey]};`;
+        });
+      } else {
+        result += `--${prefix}-${key}: ${group[key]};`;
+      }
     });
   });
 
